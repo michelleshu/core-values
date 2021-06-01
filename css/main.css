@@ -1,0 +1,83 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 140px;
+    line-height: 120px;
+    margin: 0;
+}
+
+.section-background {
+    filter: grayscale(100%);
+    height: 100%;
+    width: auto;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.section-content {
+    position: relative;
+    margin: 100px;
+}
+
+.black-text {
+    color: black;
+}
+
+.grey-text {
+    color: #808080;
+}
+
+.white-text {
+    color: white;
+}
+
+.blue-background {
+    background-color: #86E3CE;
+}
+
+.green-background {
+    background-color: #D0E6A5;
+}
+
+.orange-background {
+    background-color: #FFDD95;
+}
+
+.red-background {
+    background-color: #FC887B;
+}
+
+.color-bars {
+    margin-bottom: 20px;
+}
+
+.color-bar {
+    display: inline-block;
+    height: 14px;
+    width: 60px;
+    margin-right: 4px;
+}
+
+#overview {
+    background-color: black;
+}
+
+#overview-background {
+    right: 0;
+    bottom: 0;
+}
+
+#overview-content {
+    position: absolute;
+    bottom: 0;
+}
