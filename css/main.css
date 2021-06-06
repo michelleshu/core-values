@@ -1,8 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla", sans-serif;
 }
 
 section {
+  display: flex;
+  align-items: center;
   height: 100vh;
   max-height: 100vh;
   width: 100%;
@@ -69,6 +75,31 @@ h1 {
   margin-right: 4px;
 }
 
+.next-button,
+.prev-button {
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  opacity: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-button:hover,
+.prev-button:hover {
+  color: white;
+  opacity: 100%;
+}
+
+.next-button {
+  bottom: 40px;
+}
+
+.prev-button {
+  top: 40px;
+}
+
 #overview {
   background-color: black;
 }
@@ -86,6 +117,11 @@ h1 {
 #overview-content {
   position: absolute;
   bottom: 0;
+  margin-bottom: 100px;
+}
+
+#overview-next {
+  color: white;
 }
 
 #authenticity {
@@ -127,9 +163,13 @@ h1 {
     position: relative;
     margin: 200px;
   }
+
+  #overview-background {
+    right: 200px;
+  }
 }
 
-@media (min-width: 1260px) and (max-width: 1599px) {
+@media (min-width: 1310px) and (max-width: 1599px) {
   .narrow-screen {
     display: none;
   }
@@ -150,11 +190,15 @@ h1 {
 
   .section-content {
     position: relative;
-    margin: 80px;
+    margin: 100px;
+  }
+
+  #overview-background {
+    right: 100px;
   }
 }
 
-@media (min-width: 920px) and (max-width: 1259px) {
+@media (min-width: 920px) and (max-width: 1309px) {
   .narrow-screen {
     display: none;
   }
@@ -170,13 +214,29 @@ h1 {
   }
 
   p {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .section-content {
     position: relative;
     margin: 70px;
+  }
+
+  #overview-background {
+    right: 70px;
+  }
+
+  #overview-content {
+    margin-bottom: 60px;
+  }
+
+  .next-button {
+    bottom: 30px;
+  }
+
+  .prev-button {
+    top: 30px;
   }
 }
 
@@ -196,13 +256,25 @@ h1 {
   }
 
   p {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .section-content {
     position: relative;
     margin: 48px;
+  }
+
+  #overview-content {
+    margin-bottom: 60px;
+  }
+
+  .next-button {
+    bottom: 30px;
+  }
+
+  .prev-button {
+    top: 30px;
   }
 }
 
@@ -222,12 +294,24 @@ h1 {
   }
 
   p {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .section-content {
     position: relative;
     margin: 30px;
+  }
+
+  #overview-content {
+    margin-bottom: 60px;
+  }
+
+  .next-button {
+    display: none;
+  }
+
+  .prev-button {
+    display: none;
   }
 }
